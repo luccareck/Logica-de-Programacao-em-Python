@@ -71,3 +71,19 @@ def calcularMEDIA():
 notas = [8, 7, 9, 10]
 media = calcularMedia(notas)
 print(f"média: {media}")
+
+#9. Funções para organizar um progama
+def cadastrar_produto():
+
+    nome = input("Digite o nome do produto: ")
+    preco = float(input("Digite o preço do produto: "))
+    return nome, preco
+
+def exibir_produto(nome, preco):
+
+    print("\n=== PRODUTO ===")
+    print(f"Nome: {nome}")
+    print(f"Preço: {preco}")
+
+nome, preco = cadastrar_produto()
+exibir_produto(nome, preco)
